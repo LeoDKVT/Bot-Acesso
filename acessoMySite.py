@@ -27,8 +27,139 @@ element_to_click = driver.find_element(By.XPATH, '//*[@id="rso"]/div[3]/div/div/
 # Clique no elemento no caso o meu site
 element_to_click.click()
 
-# Aguarda 40 segundos antes de continuar a execução do programa
-time.sleep(40)
+# Aguarda 18 segundos antes de continuar a execução do programa
+time.sleep(4)
+
+# # Localiza no header a opção "Portfólio"
+element_to_click = driver.find_element(By.XPATH, '//*[@id="navbarSupportedContent"]/ul/li[2]/a')
+
+# Clique no "Portfólio"
+element_to_click.click()
+
+# Aguarda 20 segundos antes de continuar a execução do programa
+time.sleep(4)
+
+# Localiza no header a opção "Contato"
+element_to_click = driver.find_element(By.XPATH, '//*[@id="navbarSupportedContent"]/ul/li[4]/a')
+
+# Clique no "Contato"
+element_to_click.click()
+
+# Aguarda 20 segundos antes de continuar a execução do programa
+time.sleep(4)
+
+# Localiza no header a opção "Blog"
+element_to_click = driver.find_element(By.XPATH, '//*[@id="navbarSupportedContent"]/ul/li[3]/a')
+
+# Clique no "Blog"
+element_to_click.click()
+
+# Aguarda 20 segundos antes de continuar a execução do programa
+time.sleep(10)
+
+
+element_to_click = driver.find_element(By.XPATH, '/html/body/section/div[2]/div[1]/div')
+
+element_to_click.click()
+
+time.sleep(10)
+
+
+element_to_click = driver.find_element(By.XPATH, '/html/body/section/a/button')
+
+element_to_click.click()
+
+time.sleep(10)
+
+
+
+
+
+element_to_click = driver.find_element(By.XPATH, '/html/body/section/div[2]/div[2]/div')
+
+element_to_click.click()
+
+time.sleep(10)
+
+element_to_click = driver.find_element(By.XPATH, '/html/body/section/a/button')
+
+element_to_click.click()
+
+time.sleep(10)
+
+
+
+
+
+
+element_to_click = driver.find_element(By.XPATH, '/html/body/section/div[2]/div[3]/div')
+
+element_to_click.click()
+
+time.sleep(10)
+
+element_to_click = driver.find_element(By.XPATH, '/html/body/section/a/button')
+
+element_to_click.click()
+
+time.sleep(10)
+
+
+
+
+
+
+element_to_click = driver.find_element(By.XPATH, '/html/body/section/div[2]/div[4]/div')
+
+element_to_click.click()
+
+time.sleep(210)
+
+element_to_click = driver.find_element(By.XPATH, '/html/body/section/a/button')
+
+element_to_click.click()
+
+time.sleep(10)
+
+
+
+
+
+
+
+element_to_click = driver.find_element(By.XPATH, '/html/body/section/div[2]/div[5]/div')
+
+element_to_click.click()
+
+time.sleep(10)
+
+element_to_click = driver.find_element(By.XPATH, '/html/body/section/a/button')
+
+element_to_click.click()
+
+time.sleep(10)
+
+
+
+
+
+element_to_click = driver.find_element(By.XPATH, '/html/body/section/div[2]/div[6]/div')
+
+element_to_click.click()
+
+time.sleep(10)
+
+element_to_click = driver.find_element(By.XPATH, '/html/body/section/a/button')
+
+element_to_click.click()
+
+time.sleep(10)
+
+
+
+
+
+
 
 # Fecha o navegador
 driver.quit()
