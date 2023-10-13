@@ -117,5 +117,11 @@ driver.find_element(By.XPATH, '/html/body/section/a/button').click()
 # Aguarda 28 segundos antes de continuar a execução do programa
 time.sleep(28)
 
+# Localiza no header a opção "Portfólio" e clica nele
+driver.find_element(By.XPATH, '//*[@id="navbarSupportedContent"]/ul/li[1]/a').click()
+
+# Aguarda 30 segundos antes de continuar a execução do programa
+time.sleep(54)
+
 # Fecha o navegador
 driver.quit()
