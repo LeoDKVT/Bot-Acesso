@@ -24,7 +24,7 @@ element.send_keys(Keys.ENTER)
 time.sleep(5)
 
 # Localiza a posição do meu site nos resultados de busca e clica nele
-driver.find_element(By.XPATH, '//*[@id="rso"]/div[7]/div/div/div[1]/div/div/span/a/h3').click()
+driver.find_element(By.XPATH, "//*[text()='Desenvolvedor Web & Designer: José Leonardo']").click()
 
 # Aguarda 25 segundos antes de continuar a execução do programa
 time.sleep(25)
