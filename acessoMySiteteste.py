@@ -24,7 +24,7 @@ element.send_keys(Keys.ENTER)
 time.sleep(5)
 
 # Localiza a posição do meu site nos resultados de busca e clica nele
-driver.find_element(By.XPATH, "//*[text()='Desenvolvedor Web & Designer: José Leonardo']").click()
+driver.find_element(By.XPATH, "//*[text()='José Leonardo | Contato']").click()
 
 # Aguarda 25 segundos antes de continuar a execução do programa
 time.sleep(25)
@@ -186,11 +186,6 @@ driver.execute_script('window.scrollTo(0, document.body.scrollHeight);')
 time.sleep(8)
 
 # Localiza o botão de "Voltar ao Blog" e clica nele
-
-# The line `driver.find_element(By.XPATH, '/html/body/section/a/button').click()` is locating an
-# element on the webpage using XPath, specifically targeting a button element within the HTML
-# structure. Once the element is located, the `click()` method is called on it, simulating a user
-# clicking on that button on the webpage.
 driver.find_element(By.XPATH, '/html/body/section/a/button').click()
 
 # Aguarda 29 segundos antes de continuar a execução do programa

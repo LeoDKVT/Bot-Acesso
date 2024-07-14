@@ -12,10 +12,18 @@ service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service)
 
 # Abre o navegador e acessa o site do Google Brasil
-driver.get('https://google.com.br')
+driver.get('https://www.instagram.com/protork_oficial/')
+
+time.sleep(20)
+
+driver.find_element(By.XPATH, "//*[text()='entrar']").click()
+
+time.sleep(20)
+
+
 
 # Localiza o elemento na página usando XPath e envia as teclas "José Leonardo" para o campo de entrada
-element = driver.find_element(By.XPATH, '//*[@id="APjFqb"]')
+element = driver.find_element(By.XPATH, '//*[@id="mount_0_0_x1"]/div/div/div[2]/div/div/div[1]/div[2]/section/nav/div[2]/div/div/div[2]/div/div/div/div[1]/a')
 element.send_keys("José Leonardo")
 
 # Pressiona a tecla ENTER após digitar "José Leonardo"
@@ -24,7 +32,7 @@ element.send_keys(Keys.ENTER)
 time.sleep(5)
 
 # Localiza a posição do meu site nos resultados de busca e clica nele
-driver.find_element(By.XPATH, "//*[text()='Desenvolvedor Web & Designer: José Leonardo']").click()
+driver.find_element(By.XPATH, "//*[text()='entrar']").click()
 
 # Aguarda 25 segundos antes de continuar a execução do programa
 time.sleep(25)
@@ -186,11 +194,6 @@ driver.execute_script('window.scrollTo(0, document.body.scrollHeight);')
 time.sleep(8)
 
 # Localiza o botão de "Voltar ao Blog" e clica nele
-
-# The line `driver.find_element(By.XPATH, '/html/body/section/a/button').click()` is locating an
-# element on the webpage using XPath, specifically targeting a button element within the HTML
-# structure. Once the element is located, the `click()` method is called on it, simulating a user
-# clicking on that button on the webpage.
 driver.find_element(By.XPATH, '/html/body/section/a/button').click()
 
 # Aguarda 29 segundos antes de continuar a execução do programa
