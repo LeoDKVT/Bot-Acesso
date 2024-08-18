@@ -9,7 +9,7 @@ import time
 service = Service(ChromeDriverManager().install())
 
 # Inicializa o driver do Chrome, utilizando o serviço configurado anteriormente
-driver = webdriver.Chrome(service=service)
+driver = webdriver.Chrome()
 
 # Abre o navegador e acessa o site do Google Brasil
 driver.get('https://www.instagram.com/protork_oficial/')

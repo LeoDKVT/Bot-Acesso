@@ -13,7 +13,8 @@ service = Service(ChromeDriverManager().install())
 #segPlano.add_argument('--headless=new')
 
 # Inicializa o driver do Chrome, utilizando o serviço configurado anteriormente
-driver = webdriver.Chrome(service=service)
+driver = webdriver.Chrome()
+
 #options=segPlano
 # Abre o navegador e acessa o site do Google Brasil
 driver.get('https://google.com.br')
