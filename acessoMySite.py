@@ -23,6 +23,9 @@ element.send_keys(Keys.ENTER)
 
 time.sleep(5)
 
+driver.find_element(By.XPATH, '//*[@id="botstuff"]/div/div[3]/table/tbody/tr/td[3]/a').click()
+time.sleep(5)
+
 # Localiza a posição do meu site nos resultados de busca e clica nele
 driver.find_element(By.XPATH, "//*[text()='Desenvolvedor Web & Designer: José Leonardo']").click()
 
